@@ -1,6 +1,7 @@
 import java.io.*;
 import java.util.*;
 
+// Bank Account class;
 class BankAccount {
     private String accountNumber;
     private String accountName;
@@ -56,7 +57,7 @@ class BankAccount {
         return amount;
     }
 }
-
+// Main class and method;
 public class BankApp {
     private static final String filePath = "src/loke.txt";
 
@@ -161,7 +162,7 @@ public class BankApp {
 
                     System.out.println("Account created successfully!");
 
-                    // ✅ Save new account to file
+                    // Save new account to file
                     saveAccountsToFile(accounts);
                     break;
 
@@ -178,7 +179,7 @@ public class BankApp {
         scan.close();
     }
 
-    //Save all accounts back to file
+    // Save all accounts back to file
     private static void saveAccountsToFile(Map<String, BankAccount> accounts) {
         try (FileWriter writer = new FileWriter(filePath, false)) {
             for (BankAccount acc : accounts.values()) {
