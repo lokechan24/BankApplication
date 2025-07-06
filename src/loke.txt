@@ -1,0 +1,4 @@
+7376222it168,kathiresan,it168,800.0
+7376221ec285,saikarthik,ec285,1000.0
+7376222it182,lokeshwaran,it182,1200.0
+7376221cs161,harikrishnan,cs161,1000.0
