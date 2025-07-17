@@ -45,16 +45,8 @@ class BankAccount {
         System.out.println("Your Current Balance: ₹" + this.amount);
     }
 
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
     public String toFileString() {
         return accountNumber + "," + accountName + "," + password + "," + amount;
-    }
-
-    public double getAmount() {
-        return amount;
     }
 }
 // Main class and method;
@@ -96,7 +88,7 @@ public class BankApp {
                     String accountNumber = scan.nextLine();
                     System.out.print("Enter your Account Name: ");
                     String accountName = scan.nextLine();
-                    System.out.print("Enter your 4-digit Password: ");
+                    System.out.print("Enter your 5-digit Password: ");
                     String password = scan.nextLine();
 
                     BankAccount account = accounts.get(accountNumber);
